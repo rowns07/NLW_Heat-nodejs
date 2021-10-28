@@ -9,10 +9,12 @@ class UserProfileController {
     const service = new UserProfileService();
 
     try {
+      // CHAMANDO SERVIÇO DE BUSCA DE USUARIO
       const result = await service.execute(user_id);
       return response.json(result);
 
     } catch (err) {
+      // RETORNANDO ERRO
       return response.status(401).json({ error: err.message })
     }
 

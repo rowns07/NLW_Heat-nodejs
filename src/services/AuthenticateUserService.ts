@@ -59,7 +59,7 @@ class AuthenticateUserService {
         },
       });
     }
-
+    // Criando token para aplicação
     const token = sign(
       {
         user: {
