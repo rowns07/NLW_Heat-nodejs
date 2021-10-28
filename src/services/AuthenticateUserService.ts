@@ -46,7 +46,7 @@ class AuthenticateUserService {
       where: {
         github_id: id
       }
-    })
+    });
 
     // Criando novo usuario caso não exista
     if (!user) {
